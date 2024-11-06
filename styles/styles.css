@@ -75,16 +75,16 @@ body {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    transition: opacity 0.3s ease; /* Добавим плавный переход */
-    opacity: 0; /* Начинаем с 0 (невидимо) */
-    pointer-events: none; /* Запретим клики, когда кнопка невидима */
+    transition: opacity 0.3s ease; 
+    opacity: 0; 
+    pointer-events: none; 
 }
 
 .button.visible {
-    opacity: 1; /* Сделаем кнопку видимой */
-    pointer-events: auto; /* Разрешаем клики, когда кнопка видима */
+    opacity: 1; 
+    pointer-events: auto;
 }
 
 .film-info span {
-    display: block; /* Каждый элемент будет занимать всю ширину и начинаться с новой строки */
+    display: block; 
 }
