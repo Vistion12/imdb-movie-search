@@ -14,13 +14,13 @@ body {
   .search-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
   }
   
   input[type="text"] {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 15px;
     width: 300px;
     margin-right: 10px;
   }
@@ -28,14 +28,14 @@ body {
   button {
     padding: 10px 15px;
     border: none;
-    border-radius: 4px;
-    background-color: #007bff;
+    border-radius: 15px;
+    background-color: #32CD32;
     color: white;
     cursor: pointer;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #32CD32;
   }
   
   #result {
@@ -64,3 +64,27 @@ body {
     font-size: 18px;
     margin: 20px 0;
   }
+ 
+  .button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #32CD32;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Добавим плавный переход */
+    opacity: 0; /* Начинаем с 0 (невидимо) */
+    pointer-events: none; /* Запретим клики, когда кнопка невидима */
+}
+
+.button.visible {
+    opacity: 1; /* Сделаем кнопку видимой */
+    pointer-events: auto; /* Разрешаем клики, когда кнопка видима */
+}
+
+.film-info span {
+    display: block; /* Каждый элемент будет занимать всю ширину и начинаться с новой строки */
+}
